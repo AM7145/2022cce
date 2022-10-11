@@ -1,20 +1,14 @@
 #include<stdio.h>
-#include<iostream>
-using namespace std;
-
 int main()
 {
-	printf("10+5ªº­È¬°:%d\n", 10+5);
-	printf("10-5ªº­È¬°:%d\n", 10-5);
-	printf("10*5ªº­È¬°:%d\n", 10*5);
-	printf("10/5ªº­È¬°:%d\n", 10/5);
-	
-	printf("10/5¤§¾l¼Æ­È¬°:%d\n", 10%5);
-	
-	
+    int a,b;
+    scanf("%d%d", &a, &b);
+	printf("10+5çš„å€¼ç‚º:%d\n", a+b);
+	printf("10-5çš„å€¼ç‚º:%d\n", a-b);
+	printf("10*5çš„å€¼ç‚º:%d\n", a*b);
+	printf("10/5çš„å€¼ç‚º:%d\n", a/b);
 
-	
-	
-    system("pause");
-	return 0;
+	printf("10/5ä¹‹é¤˜æ•¸å€¼ç‚º:%d\n",  a%b);
+
 }
+
