@@ -67,3 +67,90 @@ int main()
     printf("答案b: %d", b);
 }
 ```
+# 2022cce week07
+##week07-1:比較int及long long int的差別(可存的位數有差別)
+```cpp
+#include<stdio.h>
+int main()
+{
+    int n=9876543210;
+    printf("int印出來為:%d\n", n);
+
+    long long int a=9876543210;
+    printf("long long int印出來為:%lld\n", a);
+}
+```
+##week07-2:用long long int來處理最大公因數
+```cpp
+#include<stdio.h>
+int main()
+{
+    long long int a,b;
+    scanf("%lld %lld", &a, &b);
+
+    long long int ans;
+    for(long long int i=1;i<=a;i++){
+        if( a%i==0 && b%i==0) ans=i;
+    }
+    printf("最大公因數為:%lld\n", ans);
+}
+```
+##week07-3:用long long int來處理輾轉相除法
+```cpp
+#include<stdio.h>
+int main()
+{
+    long long int a,b,c;
+    scanf("%lld %lld", &a, &b);
+    while(1){
+        c=a % b;
+        printf("a:%lld b:%lld c:%lld\n", a, b, c);
+        if(c==0) break;
+        a = b;
+        b = c;
+    }
+    printf("答案是: %lld\n", b);
+}
+```
+##week07-4:討論10進位轉2進位從個位數來剝,把 123456789 分別剝出 9 8 ... 1 用 %10 取餘數可以得到值，n=n/10便能把數字慢慢變小(較為繁雜，有簡化方案)
+```cpp
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+    printf("瞷计:%d\n", n%10);
+    n= n / 10;
+
+
+}
+
+
