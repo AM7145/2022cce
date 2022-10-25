@@ -169,7 +169,8 @@ int main()
     if(bad==0) printf("%d 是質數", n);
     else printf("%d 不是質數", n);
 }
-##week08-2:
+```
+##week08-2:瘋狂程設題目講解:用迴圈找質數
 ##week08-3:迴圈練習，數字加總
 ```cpp
 #include<stdio.h>
