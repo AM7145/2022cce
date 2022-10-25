@@ -170,6 +170,24 @@ int main()
     else printf("%d 不是質數", n);
 }
 ```
+##week08-2:瘋狂程設題目講解:利用迴圈找範圍內的質數，先找出範圍內所有的數字，再利用迴圈一個一個去判斷是否質數
+```cpp
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d", &a);
+
+	for(int n=2;n<=a;n++){
+
+		int bad=0;
+		for(int i=2;i<n;i++){
+			if(n%i==0) bad=1;
+		}
+		if(bad==0) printf("%d ", n);
+	}
+}
+```
 ##week08-3:迴圈練習，數字加總
 ```cpp
 #include<stdio.h>
