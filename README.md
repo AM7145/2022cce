@@ -153,7 +153,7 @@ int main()
 
 }
 
-# 2022cce week08
+#2022cce week08
 ##week08-1:列出全部質數,使用for迴圈用一個變數bad=0表示迴圈之前沒有壞掉迴圈後看bad的值就可以知道是不是質數
 ```cpp
 #include<stdio.h>
