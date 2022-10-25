@@ -153,4 +153,96 @@ int main()
 
 }
 
+# 2022cce week08
+##week08-1:列出全部質數,使用for迴圈用一個變數bad=0表示迴圈之前沒有壞掉迴圈後看bad的值就可以知道是不是質數
+```cpp
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int bad=0;///讀值
+
+    for(int i=2;i<n;i++){
+        if(n%i==0) bad=1;///如果發生可以整除的時候
+    }
+    if(bad==0) printf("%d 是質數", n);
+    else printf("%d 不是質數", n);
+}
+##week08-2:
+##week08-3:迴圈練習，數字加總
+```cpp
+#include<stdio.h>
+int main()
+{
+    printf("請輸入5個數字(要加起來):");
+    int n,sum=0;
+    for(int i=0;i<5;i++){
+        scanf("%d", &n);
+        sum+=n;
+    }
+    printf("總和是:%d",sum);
+}
+```
+##week08-4:瘋狂程設題目講解:直角三角形，外部結構--->空格---->星星
+```cpp
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    for(int i=1;i<=n;i++){
+        for(int k=1;k<=n-i;k++) printf(" ");
+
+        for(int k=1;k<=i;k++) printf("*");
+        printf("\n");
+    }
+
+}
+```
+##week08-5:瘋狂程設題目講解:直角三角形，利用判斷if else
+```cpp
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    for(int i=1;i<=n;i++){
+        for(int k=1;k<=n;k++){
+            if(k<=n-i) printf(" ");
+            else printf("*");
+        }
+
+
+        printf("\n");
+    }
+
+}
+```
+##week08-6:瘋狂程設題目講解:直角三角形,whlie迴圈寫法，利用if判斷來決定誰印空格、誰印星星
+```cpp
+#include<stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+
+	int i=1;
+	while(i<=n){
+		int k=1;
+		while(k<=n){
+			if(k<=n-i) printf(" ");
+			else printf("*");
+
+			k++;
+		}
+	printf("\n");
+	i++;
+	}
+}
+```
+
+
 
