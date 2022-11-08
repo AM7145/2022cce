@@ -261,6 +261,40 @@ int main()
 	}
 }
 ```
+# 2022cce week10
+## week10-1:陣列之練習，宣告一個變數，設定陣列的大小為4並在裡面輸入4個值
+```cpp
+#include<stdio.h>
+int main()
+{
+    int a[4] ={10,20,30,40};
+    for(int i=0;i<4;i++) printf("a[%d]=%d\n", i, a[i]);
+}
+```
+## week10-2:陣列之練習，假設沒有把值放入陣列，則讀出來的值會採亂數
+```cpp
+#include<stdio.h>
+int main()
+{
+    int a[4];///先設定格子的數量，電腦由0開始，a[0],a[1]...
+    printf("a[0]=%d\n", a[0]);///假設沒有設定數值，會採亂數以及記憶體所存之值
+
+    a[0]=33;///把一個數值放進第一個裡面
+    printf("a[0]=%d\n", a[0]);///可以讀出第一個的數值是多少
+}
+```
+## week10-3:熟悉for迴圈與陣列，熟悉如何利用迴圈倒反印
+```cpp
+#include<stdio.h>
+int main()
+{
+    int a[4]={10,20,30,40};
+
+    for(int i=0;i<4;i++) printf("%d ", a[i]);
+    for(int i=3;i>=0;i--) printf("%d ", a[i]);
+}
+```
+
 
 
 
